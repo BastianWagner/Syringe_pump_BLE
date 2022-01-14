@@ -2,6 +2,8 @@
 
 GUI was coded in python with PyQt5
 
+![Syringe pump logo](https://raw.githubusercontent.com/BastianWagner/Syringe_pump_BLE/master/Syringe_pump_GUI.png)
+
 PyQt5 can be installed with the comand...
 > pip install PyQt5
 
