@@ -146,12 +146,13 @@ void loop() {
 
     String data_Speed_2 = "";
     int char_counter_Speed_2 = 0;
+
+    int direction_1 = 1;
+    int direction_2 = 1;
     
     //While the central is still connected to peripheral, collcet new characteristic values
     digitalWrite(LED_BUILTIN, HIGH); 
     while (central.connected()) {
-      int direction_1 = 1;
-      int direction_2 = 1;
       //Collect 10 bytes in total, transfrom each byte to single number and concat each to from a long number
       if (stepsCharacteristic_1.written()) {
         char byte_char = (char) stepsCharacteristic_1.value();
